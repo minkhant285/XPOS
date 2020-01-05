@@ -1,0 +1,47 @@
+$xs:600px;
+$sm:960px;
+$md:1280px;
+$lg: 1920px;
+
+.Dock_Container {
+    background-color: #e71f5b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 97.2vh;
+}
+
+//small screen size
+@media screen and (min-width:$xs) and (max-width: $sm) {
+    .Dock_Container {
+        background-color: blue;
+    }
+}
+
+//Medium Screen size
+@media screen and (min-width:$sm) and (max-width: $md) {
+    .Dock_Container {
+        background-color: yellow;
+    }
+}
+
+//Large Screen Size
+@media screen and (min-width:$md) and (max-width: $lg) {
+    .Dock_Container {
+        background-color: orange;
+    }
+}
+
+//Extra Large screen Size
+@media screen and (min-width:$lg) {
+    .Dock_Container {
+        background-color: green;
+    }
+}
+
+// Extra Small Screen Size
+@media only screen and (max-width: $xs){
+    .Dock_Container {
+        display: none;
+    }
+}
