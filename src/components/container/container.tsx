@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
-import { Dock, Home, Category, Product } from '../../components'
+import { Dock, Home, Category, Product, Sale } from '../../components'
 import './containerStyle.scss'
 
 export class Container extends React.Component {
@@ -20,7 +20,11 @@ export class Container extends React.Component {
         }
         else if(this.state.comp === "product") {
             return (<Product/>)
-        }else{
+        }
+        else if(this.state.comp === "sale") {
+            return (<Sale />)
+        }
+        else{
             return (<Home/>)
         }
     }

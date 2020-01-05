@@ -1,13 +1,12 @@
 import React from 'react'
-import './categoryStyle.scss'
 import '../../theme/Apptheme.scss';
 
-export const Category: React.FC = () => {
+export const Sale: React.FC = () => {
     return (
         <div className="Common_Description_Container">
-            This is Category.
+            This is Sale
         </div>
     )
 }
 
-export default Category
+export default Sale

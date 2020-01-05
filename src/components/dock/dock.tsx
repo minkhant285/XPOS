@@ -4,6 +4,7 @@ import { IconButton, Grid, Typography } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import CategoryIcon from '@material-ui/icons/Category';
 import ProductIcon from '@material-ui/icons/Redeem';
+import LoyaltyIcon from '@material-ui/icons/Loyalty';
 
 
 export const Dock = (props: any) => {
@@ -19,24 +20,32 @@ export const Dock = (props: any) => {
                         <IconButton color="inherit" aria-label="menu" onClick={()=>dockSelect('home')}>
                             <HomeIcon />
                         </IconButton>
-                        <Typography style={{fontSize:'10px'}}>
+                        <Typography style={{fontSize:'10px', fontWeight:'bold'}}>
                             Home
                         </Typography>
                 </Grid>
                 <Grid item style={{marginBottom:'10px'}}>
-                        <IconButton color="inherit" aria-label="category" onClick={()=>dockSelect('category')}>
+                        <IconButton color="inherit" aria-label="category" onClick={() => dockSelect('category')}>
                             <CategoryIcon />
                         </IconButton>
-                        <Typography style={{fontSize:'10px'}}>
+                        <Typography style={{fontSize:'10px', fontWeight:'bold'}}>
                             Category
                         </Typography>
                 </Grid>
                 <Grid item style={{marginBottom:'10px'}}>
-                        <IconButton color="inherit" aria-label="product" onClick={()=> dockSelect('product')}>
+                        <IconButton color="inherit" aria-label="product" onClick={() => dockSelect('product')}>
                             <ProductIcon />
                         </IconButton>
-                        <Typography style={{fontSize:'10px'}}>
+                        <Typography style={{fontSize:'10px', fontWeight:'bold'}}>
                             Products
+                        </Typography>
+                </Grid>
+                <Grid item style={{marginBottom:'10px'}}>
+                        <IconButton color="inherit" aria-label="product" onClick={() => dockSelect('sale')}>
+                            <LoyaltyIcon />
+                        </IconButton>
+                        <Typography style={{fontSize:'10px', fontWeight:'bold'}}>
+                            Sales
                         </Typography>
                 </Grid>
             </Grid>
