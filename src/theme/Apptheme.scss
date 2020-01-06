@@ -1,7 +1,40 @@
+$xs:600px;
+$sm:960px;
+$md:1280px;
+$lg: 1920px;
 .Common_Description_Container {
         position: absolute;
         top: 0;
         bottom: 0;
-        width: 95%;
+        width: 95.55%;
         background-color: #c0c0c0;
 }
+
+
+//small screen size
+@media screen and (min-width:$xs) and (max-width: $sm) {
+       
+    }
+    
+    //Medium Screen size
+    @media screen and (min-width:$sm) and (max-width: $md) {
+      
+    }
+    
+    //Large Screen Size
+    @media screen and (min-width:$md) and (max-width: $lg) {
+        
+    }
+    
+    //Extra Large screen Size
+    @media screen and (min-width:$lg) {
+    }
+    
+    // Extra Small Screen Size
+    @media only screen and (max-width: $xs){
+        .Common_Description_Container {
+                background-color: lightgreen;
+                width: 100%;
+        }
+    }
+    

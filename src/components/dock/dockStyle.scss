@@ -1,47 +1,51 @@
-$xs:600px;
-$sm:960px;
-$md:1280px;
+$xs: 600px;
+$sm: 960px;
+$md: 1280px;
 $lg: 1920px;
 
 .Dock_Container {
-    background-color: #e71f5b;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    height: 97.2vh;
+  background-color: #313866;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
 }
 
+.Dock_item {
+//   background-color: red;
+  padding: 10px;
+  align-self: center;
+}
+
+.Dock_item:hover {
+  background-color: #414a86;
+}
+
+.active {
+  background-color: #28da72;
+}
+
+
 //small screen size
-@media screen and (min-width:$xs) and (max-width: $sm) {
-    .Dock_Container {
-        background-color: blue;
-    }
+@media screen and (min-width: $xs) and (max-width: $sm) {
 }
 
 //Medium Screen size
-@media screen and (min-width:$sm) and (max-width: $md) {
-    .Dock_Container {
-        background-color: yellow;
-    }
+@media screen and (min-width: $sm) and (max-width: $md) {
 }
 
 //Large Screen Size
-@media screen and (min-width:$md) and (max-width: $lg) {
-    .Dock_Container {
-        background-color: orange;
-    }
+@media screen and (min-width: $md) and (max-width: $lg) {
 }
 
 //Extra Large screen Size
-@media screen and (min-width:$lg) {
-    .Dock_Container {
-        background-color: #313866;
-    }
+@media screen and (min-width: $lg) {
 }
 
 // Extra Small Screen Size
-@media only screen and (max-width: $xs){
-    .Dock_Container {
-        display: none;
-    }
+@media only screen and (max-width: $xs) {
+  .Dock_Container {
+    display: none;
+  }
 }
