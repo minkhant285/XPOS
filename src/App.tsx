@@ -5,13 +5,17 @@ import './App.css';
 //Components
 import { Container } from './components';
 
-//Components
+//graphql
+import { ApolloProvider } from '@apollo/react-hooks';
+import { graphqlClient } from './common/graphql/graphqlConfig';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Container />
-    </div>
+    <ApolloProvider client={graphqlClient}>
+      <div>
+        <Container />
+      </div>
+    </ApolloProvider>
   );
 }
 

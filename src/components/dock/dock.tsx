@@ -17,7 +17,7 @@ export const Dock = (props: any) => {
     function renderDockItem(){
         return (
             <Grid container direction="column">
-                <Grid item direction="column">
+                <Grid>
                     <div className={Dock_item} onClick={() => dockSelect('home')}>
                         <HomeIcon />
                         <Typography style={{ fontSize: '10px', fontWeight: 'bold' }}>
